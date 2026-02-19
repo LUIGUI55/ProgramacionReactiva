@@ -116,12 +116,17 @@ input,
 select {
   width: 100%;
   padding: 0.8rem 1rem;
-  background: rgba(15, 23, 42, 0.5);
-  border: 1px solid var(--glass-border);
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  color: white;
+  color: #f8fafc;
   font-size: 1rem;
   transition: all 0.2s;
+}
+
+::placeholder {
+  color: #94a3b8;
+  opacity: 1;
 }
 
 input:focus,
@@ -171,7 +176,10 @@ select:focus {
 
 .filter-select {
   max-width: 200px;
-  background: transparent;
+  background: var(--bg-dark);
+  /* Solid background for dropdown readability */
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
 }
 
 /* Grid & Cards */
@@ -272,10 +280,13 @@ select:focus {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.05);
-  padding: 4px 8px;
-  border-radius: 4px;
+  background: rgba(99, 102, 241, 0.15);
+  /* More visible background */
+  color: #a5b4fc;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  font-weight: 600;
 }
 
 /* Animations */
