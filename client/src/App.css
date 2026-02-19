@@ -54,8 +54,9 @@ body {
   border: 1px solid var(--glass-border);
   border-radius: 24px;
   width: 100%;
-  max-width: 1200px;
-  padding: 3rem;
+  max-width: 98vw;
+  /* Full width as requested */
+  padding: 2rem;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
 }
 
